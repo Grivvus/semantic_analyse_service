@@ -1,0 +1,75 @@
+,№,Topic,label,Solution
+0,8,I have problems with my laptop. It keeps freezing and crashing and I have tried everything to fix it. Can you help?,Support,Run antivirus check and follow the antivirus' instructions. Let me know of the results.
+1,104,"I have a problem with the sound on my computer. I checked the settings and everything is fine, but I still can't hear anything.",Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+2,108,"I have a problem with the camera on my computer. I checked the settings and everything is fine, but I still don't see anything.",Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+3,112,"I have a problem with the microphone on my computer. I checked the settings and everything is fine, but I still can't hear anything.",Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+4,170,I'm having trouble accessing certain websites on my computer.,Network,Please specify the exact websites you are trying to access. It is possible that these sites are unreachable from our company's network.
+5,173,My computer is having sound problems.,Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+6,179,I have a problem with the screen resolution on my computer.,Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+7,236,I can't use the software due to a hardware problem. I need help finding a solution.,Hardware,Please contact the workstation support service
+8,265,I can't print from my computer. It's been a problem for a few days now.,Support,Follow this instruction and let me know the results: https://support.microsoft.com/en-us/windows/fix-printer-connection-and-printing-problems-in-windows-fb830bff-7702-6349-33cd-9443fe987f73
+9,268,I am having trouble accessing the database from my laptop. Connection timeout continues.,Hardware,Please check whether your access credentials are valid.
+10,310,I have a problem with the performance of my computer. It's very slow going.,Hardware,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+11,323,"My computer is making strange noises, I'm worried that something might be wrong.",Hardware,"It is necessary to clean the system unit from dust. There are detailed instructions on the portal. If you are afraid to do it yourself, contact the workstation support service."
+12,324,"My computer is having problems with the mouse, it is very annoying.",Hardware,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+13,326,"There is a problem with the keyboard on my computer, some keys are not working.",Hardware,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+14,329,"My computer has problems with the camera, it doesn't work.",Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+15,331,"I have a problem with the cooling system on my computer, it makes strange noises.",Hardware,"It is necessary to clean the system unit from dust. There are detailed instructions on the portal. If you are afraid to do it yourself, contact the workstation support service."
+16,333,"There is a problem with my laptop battery, it won't hold the charge.",Hardware,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+17,340,"I'm having trouble accessing the company's website. Every time I try to log in, it says that my credentials are incorrect.",Access,Please use the password reset utility. There is the instruction on the portal.
+18,348,I have a problem with the company's equipment. My computer won't boot and I can't access any files.,Hardware,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+19,354,"I have a problem with the installation of new equipment, it does not connect properly. Can you help?",Hardware,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+20,393,I have a problem with the company's hardware management. It doesn't work as expected. Can you help?,Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+21,415,My computer is running very slow and I can't figure out why. I tried restarting it but that didn't help.,Hardware,Run antivirus check and follow the antivirus' instructions. Let me know of the results.
+22,421,My computer freezes and I don't know what to do. I tried restarting it but the problem persists.,Hardware,Run antivirus check and follow the antivirus' instructions. Let me know of the results.
+23,425,"I have a problem with the sound on my computer. I checked the parameters and everything is on record, but I still can't hear anything.",Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+24,429,"I have a problem with the camera on my computer. I checked the settings and everything is fine, but I still don't see anything.",Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+25,431,I have a problem with the printer. He doesn't answer and I don't know what to do.,Printer,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+26,433,"I have a problem with the microphone on my computer. I checked the parameters and everything is in the wey register, but I still can't hear anything.",Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+27,494,My computer is having sound problems.,Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+28,500,I have a problem with the screen resolution on my computer.,Hardware,Check if the current version of the device driver is installed. Detailed instructions are posted on the portal.
+29,557,I can't use the program because of the hardware problem. I need help finding hell.,Hardware,"Maintenance is required, please contact the workstation support service. In case of critical failure, the device"
+30,644,"My computer is making strange noises, I'm worried that something might be wrong.",Hardware,"It is necessary to clean the system unit from dust. There are detailed instructions on the portal. If you are afraid to do it yourself, contact the workstation support service."
+31,1544,"My laptop does not turn on, I tried to charge it, but nothing happens.",Hardware,The power supply is damaged and needs to be replaced. Contact your nearest service center.
+32,1624,"I can't send it from my computer, it doesn't work.",Printer,"Please check if the printer is connected to your computer. If so, contact your system administrator."
+33,1972,"I can't print from my computer. The printer is connected, but it does not respond when I try to print.",Printer,Please contact your system administrator.
+34,1987,"I try to print the document, but the printout is completely faded and illegible.",Printer,"Please check if the printer is connected to your computer. If so, contact your system administrator."
+35,2014,"I can't print from my device, I get a printer error message.",Printer,"Please check if the printer is connected to your computer. If so, contact your system administrator."
+36,2051,"I can't connect to the company's VPN, it says invalid credentials.",Access,Please use the password reset utility. There is the instruction on the portal.
+37,2251,"I can't connect to the company's VPN, it says invalid credentials.",Access,Please use the password reset utility. There is the instruction on the portal.
+38,2987,My Sony PlayStation does not turn on. It makes strange noises and the LED on its front panel blinks twice.,Hardware,The power supply is broken and needs to be replaced. Contact your nearest service center.
+39,2989,In which transaction can the documents generated as a result of planning operations be viewed separately? There was a crediting of one place of occurrence of costs through the performance of types of work for other facilities CO.,SAP,"It is necessary to check the box ""Planning integration"" in the version setting for a separate financial year (spro - > Controlling).
+"
+40,2990,"When calculating a CO-order for another BE (the recipient is the order of another BU) under the initial types of costs (32*,33*,34*,36*) automatic posting through the 79020000000 account contains the amount of only primary 32* and secondary costs of the type 33*, but does not take into account the amounts for secondary 34*, 36*.",SAP,"It is necessary to add secondary types of costs 34* and 36* to the CO-FI approval rule, KALH transaction."
+41,2992,"How to reflect in the purchase book the primary incoming May invoice FI (+), the reverse to it (-) and the corrective June invoice (+). All in one reporting period (2nd quarter).",SAP,"1. Reverse the original SF.
+2. To reflect the correction with the same type of document, in the title text specify a 14-digit link to the original by type NNNNNNNNNYYYY, where NNNNNNNNNN is the system number of the original, YYYY is the year of the original."
+42,2999,"Please tell me what could be the reason that when the FI documents are aligned on the account through the F-03 transaction from the balance position, the difference in a penny is not automatically deducted. Returns the error ""The reasons for the balance with automatic write-off are unacceptable here.""",SAP,"You specify the reason for the difference, for which the indicator ""Debit the difference through a separate account"" is indicated in the reason setting. The transaction of setting up the causes of the difference is OBBE. Uncheck this box for your reason or do not specify the reason in the alignment transaction at all."
+43,3001,How to create Purchase Requisition in SAP ECC,SAP,https://www.appseconnect.com/purchase-requisition-in-sap-ecc/
+44,3002,I need help changing PR in transaction ME52N. It says 'Requisition X does not exist',SAP,https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/af9ef57f504840d2b81be8667206d485/c680b65334e6b54ce10000000a174cb4.html
+45,3006,"I am facing a Problem while creating a Purchase order with ref. to a Purchase Requistion.
+
+System is showing an error ""Purchase requisitions of document_type ZVS or item category L may not be assigned to purchase orders of document type ZVS or item category L"".
+
+Doc. type of Pur. Req. & PO is ZVS
+
+Item Category for PR & PO is L",SAP,"SPRO-> Materials Management -> Purchasing -> Purchase order -> Define Document Types
+
+Select your document type ZVS and click on allowed item categories & check whether item category L is assigned.
+
+Then select link purchase requisition - document type. Here check whether your purchase requisition document type ZVS and item category L combination is maintained."
+46,3010,"Issue: Batch is not determining automatically at returns obd level.
+
+Scenario: Before activating the batch process to material, we have sold 10 qty, . Now, after activation batch process, we got that material stock from customer level. Now, while creating returns obd to receive that qty, system is not triggering batch automatically.",SAP,"The goods are at your customer and have physically no batch, hence the system is not able to determine a batch automatically because it cannot look into your customers system, and even it could it would not find a batch."
+47,3016,"My client want to implement pp module So as far material master is concerned what data & views I have to require for create material ,For which pp cycle the views from material master going to change, We having by co products & by products also , I search on sdn But not get satisfactory solution.",SAP,"To Implement PP module,the material master should have all MRP views.If you want to maintain co products,you should go to OMS2,Select required material type and in which you should restrict that no external purchase order not allowed and internal purchase order allowed.Then only that co product field will be appeared in MRP2 view.You should select that field.
+
+Thanks and regards,"
+48,3018,"We are facing a weird issue :
+
+For one particular user ""material group"" from material master is not defaulting into the PO. Material group field is blank.
+
+For other users for the same material , material group is defaulting correctly. Initially we thought the problem is with the user ID , then to our wonder we found few PO's(created by same user) with multiple line items of the same material have material group defaulted correctly in line item 2,3,4 but not in line item 1.
+
+Have any faced this kind of issue ?",SAP,"check how the user is creating PO, if they are referring the OLD PO then the old might be not having the material group for line item 1"
+49,3041,number - incoming cost at the beginning of the month - depreciation amount - cost at the end of the month. How to do it?,SAP,Use this report S_P99_41000192 - Depreciation carried out on the fixed asset and the transaction period
+50,3051,"I can't log in to SAP, a network load balancing error occurs",Network,Check the network connection and the connection of your personal information security key
+51,3052,I received an email with a spam mailing list and a potentially malicious attachment to my corporate email. What do I need to do?,Network\security,do not open or forward the email to anyone and contact the information security service

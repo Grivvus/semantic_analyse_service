@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "semantic-analyse-service"
+version = "0.1.0"
+description = ""
+authors = ["Arseniy <kruchik.a04@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["standard"], version = "^0.115.3"}
+pydantic-settings = "^2.6.0"
+pydantic = "^2.9.2"
+transformers = "^4.46.0"
+weaviate-client = "^4.9.0"
+tensorflow = "^2.18.0"
+torch = "^2.5.0"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
