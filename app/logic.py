@@ -1,9 +1,11 @@
 import weaviate
 import weaviate.classes as wvc
 from weaviate.client import WeaviateClient
+from weaviate.classes.query import MetadataQuery
 
 from app.model import vectorize_one
 from app.settings import settings
+from app.pydantic_models import AnalyzeResponse, VerbalAnalyzeResponse
 
 
 def connect_to_vec_db() -> WeaviateClient:
@@ -26,8 +28,57 @@ def find_closest_vectors(
     client = connect_to_vec_db()
     collection = client.collections.get(collection_to_search)
     response = collection.query.near_vector(
-        near_vector=vector,  limit=limit
+        near_vector=vector,  limit=limit,
+        return_metadata=MetadataQuery(distance=True)
     )
     client.close()
     print("found something")
     return response
+
+
+def transform_data(response) -> list[AnalyzeResponse]:
+    """transform data, fetched from db to valid form before send to frontend"""
+    res = []
+    for obj in response.objects:
+        d = {
+            "issue_id": obj.properties["issue_id"],
+            "percentage": int((1 - obj.metadata.distance) * 100),
+        }
+        if d["percentage"] > 70:
+            curr_obj = AnalyzeResponse(**d)
+            res.append(curr_obj)
+    return res
+
+
+def transform_verbal_data(response) -> list[VerbalAnalyzeResponse]:
+    """
+    transform verbal data, fetched from db to valid form
+    before send to frontend
+    """
+    res = []
+    for obj in response.objects:
+        d = {
+            "issue_id": obj.properties["issue_id"],
+            "percentage": int((1 - obj.metadata.distance) * 100),
+            "issue_text": obj.properties["issue_text"],
+            "issue_answer": obj.properties["solution"],
+        }
+        if d["percentage"] > 70:
+            curr_obj = VerbalAnalyzeResponse(**d)
+            res.append(curr_obj)
+    return res
+
+
+def transform_query(query: str) -> str:
+    return (query.replace("I ", "").lower()
+            .replace(".", "")
+            .replace(",", "")
+            .replace("?", "")
+            .replace(" i ", " ")
+            .replace(" you ", " ")
+            .replace(" is ", " ")
+            .replace(" are ", " ")
+            .replace("i'm", "")
+            .replace(" a ", " ")
+            .strip()
+            )

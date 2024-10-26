@@ -26,6 +26,10 @@ def declare_schemas():
                     data_type=wvc.config.DataType.TEXT,
                 ),
                 wvc.config.Property(
+                    name="edited_issue_text",
+                    data_type=wvc.config.DataType.TEXT,
+                ),
+                wvc.config.Property(
                     name="label",
                     data_type=wvc.config.DataType.TEXT,
                 ),
@@ -55,12 +59,13 @@ def prepare_data() -> list[wvc.data.DataObject]:
     df = pandas.read_csv(path + "out.csv", dialect="excel")
     res = []
     for i, row in df.iterrows():
-        vector = vectorize_one(row["Topic"])
+        vector = vectorize_one(row["edited_issue_text"])
         res.append(
             wvc.data.DataObject(
                 properties={
                     "issue_id": row["№"],
                     "issue_text": row["Topic"],
+                    "edited_issue_text": row["edited_issue_text"],
                     "label": row["label"],
                     "Solution": row["Solution"],
                 },

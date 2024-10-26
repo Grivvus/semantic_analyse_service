@@ -17,6 +17,18 @@ def process_xlsx():
     file = pandas.read_excel(path + "dataset.xlsx", sheet_name="Sheet1")
     for index, row in file.iterrows():
         if type(row["Solution"]) is not float:
+            row["edited_issue_text"] = (row["Topic"].replace("I ", "").lower()
+                                    .replace(".", "")
+                                    .replace(",", "")
+                                    .replace("?", "")
+                                    .replace(" i ", " ")
+                                    .replace(" you ", " ")
+                                    .replace(" is ", " ")
+                                    .replace(" are ", " ")
+                                    .replace("i'm", "")
+                                    .replace(" a ", " ")
+                                    .strip()
+                                    )
             df = pandas.concat([df, row.to_frame().T], ignore_index=True)
 
     print(df)
