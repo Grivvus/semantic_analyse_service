@@ -8,6 +8,7 @@ git clone https://github.com/Grivvus/semantic_analyse_service.git
 cd semantic_analyse_service
 
 ### 3. собираем и запускаем контейнеры:
+#### 3.0.1 - посколько с сервисом используется бд, необходимо изменить путь к точке монтирования docker volume
 #### a) docker-compose -f compose_build.yaml up --build
 лучший вариант, собирать контейнер с сервисом из Dockerfile'а, который лежит в проекте
 #### б) docker-compose up --build
