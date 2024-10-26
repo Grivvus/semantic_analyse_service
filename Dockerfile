@@ -13,6 +13,7 @@ ENV PYTHONPATH=/app
 COPY ./pyproject.toml /app/pyproject.toml
 RUN poetry install --no-root
 COPY ./data /app/data
+COPY ./.env /app/.env
 COPY ./scripts /app/scripts
 COPY ./app /app/app
 

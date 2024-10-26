@@ -22,12 +22,10 @@ services:
       ENABLE_API_BASED_MODULES: 'true'
       CLUSTER_HOSTNAME: 'node1'
   semantic_analyse_service:
-    image: grivvus/semantic_analyze:v1
-    # build:
-    #   context: .
+    build:
+      context: .
     container_name: semantic_analyse
-    # env_file:
-    #   - ./.env
+
     depends_on:
       - weaviate
     ports:

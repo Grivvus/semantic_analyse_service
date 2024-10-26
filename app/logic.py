@@ -4,12 +4,12 @@ from weaviate.client import WeaviateClient
 from weaviate.classes.query import MetadataQuery
 
 from app.model import vectorize_one
-from app.settings import settings
+# from app.settings import settings
 from app.pydantic_models import AnalyzeResponse, VerbalAnalyzeResponse
 
 
 def connect_to_vec_db() -> WeaviateClient:
-    client = weaviate.connect_to_local(host=settings.WEAVIATE_HOST)
+    client = weaviate.connect_to_local(host="weaviate")
     return client
 
 
