@@ -15,8 +15,9 @@ def vectorize_one(text: str) -> list[float]:
     )
     with torch.no_grad():
         outputs = model(**inputs)
-    text_embedding = outputs.last_hidden_state[:, 0, :].numpy().flatten()
-    text_embedding = text_embedding.tolist()
+    # text_embedding = outputs.last_hidden_state[:, 0, :].numpy().flatten()
+    text_embedding = outputs.last_hidden_state.mean(dim=1).tolist()[0]
+    # text_embedding = text_embedding.tolist()
     return text_embedding
 
 

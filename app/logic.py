@@ -44,6 +44,8 @@ def transform_data(response) -> list[AnalyzeResponse]:
             "issue_id": obj.properties["issue_id"],
             "percentage": int((1 - obj.metadata.distance) * 100),
         }
+        # if d["percentage"] > 95:
+        #     return [AnalyzeResponse(**d)]
         if d["percentage"] > 70:
             curr_obj = AnalyzeResponse(**d)
             res.append(curr_obj)
@@ -63,6 +65,8 @@ def transform_verbal_data(response) -> list[VerbalAnalyzeResponse]:
             "issue_text": obj.properties["issue_text"],
             "issue_answer": obj.properties["solution"],
         }
+        # if d["percentage"] > 95:
+        #     return [AnalyzeResponse(**d)]
         if d["percentage"] > 70:
             curr_obj = VerbalAnalyzeResponse(**d)
             res.append(curr_obj)
@@ -70,15 +74,12 @@ def transform_verbal_data(response) -> list[VerbalAnalyzeResponse]:
 
 
 def transform_query(query: str) -> str:
-    return (query.replace("I ", "").lower()
+    return (query.lower()
             .replace(".", "")
             .replace(",", "")
             .replace("?", "")
-            .replace(" i ", " ")
-            .replace(" you ", " ")
             .replace(" is ", " ")
             .replace(" are ", " ")
-            .replace("i'm", "")
             .replace(" a ", " ")
             .strip()
             )
