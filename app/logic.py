@@ -82,3 +82,19 @@ def transform_query(query: str) -> str:
             .replace(" a ", " ")
             .strip()
             )
+
+
+def guess_category(query: str) -> str | None:
+    vec = vectorize_one(query)
+    d = {}
+    top_closest = find_closest_vectors("Issue", vec)
+    for obj in top_closest.objects:
+        if obj.properties["label"] in d.keys():
+            d[obj.properties["label"]] += 1
+        else:
+            d[obj.properties["label"]] = 1
+    for k in d.keys():
+        if d[k] >= 4:
+            return k
+        else:
+            None

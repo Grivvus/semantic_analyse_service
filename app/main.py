@@ -11,6 +11,9 @@ app.include_router(router)
 
 
 if __name__ == "__main__":
-    declare_schemas()
-    fillup_db()
+    try:
+        declare_schemas()
+        fillup_db()
+    except Exception:
+        print("[WARNING]: database has been initialised already")
     print("Hello from main")
