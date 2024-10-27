@@ -22,7 +22,7 @@ services:
       ENABLE_API_BASED_MODULES: 'true'
       CLUSTER_HOSTNAME: 'node1'
   semantic_analyse_service:
-    image: grivvus/semantic_analyze:v1
+    image: grivvus/semantic_analyze:v3
     # build:
     #   context: .
     container_name: semantic_analyse
